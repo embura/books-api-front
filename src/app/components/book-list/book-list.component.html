@@ -1,0 +1,10 @@
+<p>
+    book-list
+</p>
+<!-- Add book: <input type="text" name="book" id="book" (keyup)="onNameKeyUp($event)"> -->
+
+<ul>
+  <li *ngFor="let book of books">    
+    <app-book [book]="book"></app-book>
+  </li>
+</ul> 
